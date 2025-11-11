@@ -5,30 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        body { font-family: Arial; margin: 40px; background: #f9f9f9; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; }
-        h1 { color: #007acc; }
+        body {
+            font-family: Arial;
+            margin: 40px;
+            background: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            position: relative; /* allows absolute positioning inside */
+        }
+
+        h1 {
+            color: #007acc;
+        }
+
+        /* 👇 New style for the profile image */
+        .profile-pic {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007acc;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- 👇 Add your image here -->
+        <img src="images/cv pic blue.jpg" alt="Awais Khan" class="profile-pic">
+
         <h1>Hello, I'm Awais Khan 👋</h1>
         <p>Welcome to my portfolio!</p>
+
         <h2>About Me</h2>
         <p>I’m a Senior Embedded System and Python Developer. I love working on Robotics.</p>
+
         <h2>Education</h2>
         <ul>
             <li><a href="education/MS.html">Master of Science Electrical Engineering</a></li>
             <li><a href="education/BS.html">Bachelor of Science Electrical Engineering</a></li>
         </ul>
+
         <h2>Projects</h2>
         <ul>
             <li><a href="projects/vision_based_object_track_and_follow.html">Project 01: Vision Based Object Track and Follow</a></li>
             <li><a href="projects/Implementation_of_Attitude_Controller_for_Fixed_Wing_Drone_using_ROS.html">Project 02: Implementation of Attitude Controller for Fixed Wing Drone using ROS</a></li>
             <li><a href="projects/Drone_Swarm_System_using_ROS.html">Project 03: Drone Swarm System using ROS</a></li>
         </ul>
+
         <h2>Contact</h2>
         <p>Email: awaisk65@gmail.com</p>
     </div>
 </body>
 </html>
+
